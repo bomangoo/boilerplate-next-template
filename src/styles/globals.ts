@@ -2,6 +2,17 @@ import 'normalize.css';
 import { css } from '@emotion/react';
 
 export const globalStyles = css`
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    @font-face {
+        font-family: 'Pretendard Variable';
+        font-weight: 45 920;
+        font-style: normal;
+        font-display: swap;
+        src: url('./static/font/PretendardVariable.woff2')
+            format('woff2-variations');
+    }
+
     /* Reset CSS */
     *,
     *::before,
@@ -19,11 +30,11 @@ export const globalStyles = css`
     }
 
     body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-            'Helvetica Neue', Arial, sans-serif;
+        font-family: 'Pretendard Variable', 'Montserrat', BlinkMacSystemFont,
+            'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
         line-height: 1.6;
-        background-color: #fff;
-        color: #333;
+        background-color: #000;
+        color: #fff;
     }
 
     a {
@@ -44,5 +55,20 @@ export const globalStyles = css`
     img {
         max-width: 100%;
         display: block;
+    }
+
+    .pc-only {
+        display: block;
+
+        @media screen and (max-width: 1023px) {
+            display: none;
+        }
+    }
+    .mobile-only {
+        display: none;
+
+        @media screen and (max-width: 1023px) {
+            display: block;
+        }
     }
 `;
