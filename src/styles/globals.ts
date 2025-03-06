@@ -33,8 +33,7 @@ export const globalStyles = css`
         font-family: 'Pretendard Variable', 'Montserrat', BlinkMacSystemFont,
             'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
         line-height: 1.6;
-        background-color: #000;
-        color: #fff;
+        color: #333;
     }
 
     a {
