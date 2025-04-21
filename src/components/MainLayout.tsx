@@ -13,25 +13,17 @@ export default function CommonLayout(props: {
     children: ReactNode;
     description?: string;
 }) {
-    const { title, children } = props;
+    const { title, description, children } = props;
     const { isDesktop } = useDeviceType();
 
     return (
         <>
-            <SiteHead
-                title={title}
-                description={'메디컬 토탈 솔루션 R&D 기업'}
-            />
+            <SiteHead title={title} description={description} />
             <StyledCommomWrapper>
                 {isDesktop ? (
                     <StyledMainHeader>
                         <h1>
-                            <Image
-                                src={Logo}
-                                alt="Monster & partners"
-                                width={471}
-                                height={35}
-                            />
+                            <Image src={Logo} alt="" width={471} height={35} />
                         </h1>
                     </StyledMainHeader>
                 ) : (

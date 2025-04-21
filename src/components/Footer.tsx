@@ -76,10 +76,7 @@ export default function Footer() {
                         </div>
                     </StyledFamilySiteWrapper>
                     <StyledCopyRightMobile>
-                        <p>
-                            ©2025. Monster&Partners Co., Ltd. All rights
-                            reserved.
-                        </p>
+                        <p>©2025. 회사명 Co., Ltd. All rights reserved.</p>
                         <p>
                             <Link href="/">개인정보처리방침</Link> |{' '}
                             <Link href="/">서비스이용약관</Link>
